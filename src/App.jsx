@@ -6,9 +6,6 @@ import Residencies from "./components/Residencies/Residencies";
 import Value from "./components/Value/Value"
 import Contact from "./components/Contact/Contact";
 
-
-
-
 function App() {
   return (
   <div className="App">
