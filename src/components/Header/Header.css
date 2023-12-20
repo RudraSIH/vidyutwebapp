@@ -1,0 +1,65 @@
+.h-wrapper {
+    margin: 0;
+    color: white;
+}
+
+.h-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px; /* Reduced padding */
+}
+
+/* Style your images if needed */
+.h-container img {
+    width: 10%; /* Adjusted width */
+    height: auto;
+}
+
+.menu-bar {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb635;
+    padding: 10px 0; /* Reduced vertical padding */
+}
+
+.menu-item {
+    margin: 0 5px; /* Reduced spacing between menu items */
+    white-space: nowrap;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .h-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2px; /* Further reduced padding */
+    }
+
+    .h-container img {
+        width: 40%; /* Adjusted width for tablet */
+        margin-bottom: 5px;
+    }
+
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px 0; /* Reduced padding for tablet */
+    }
+
+    .menu-item {
+        margin: 3px 0; /* Reduced margin for tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .h-container img {
+        width: 60%; /* Adjusted width for mobile */
+    }
+
+    .menu-bar {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,58 @@
+.carousel {
+    position: relative;
+    max-width: 80%; /* Adjust the width as needed */
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.carousel-images {
+    display: flex; /* Ensure images are in a row */
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none; /* Hide all images initially */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    object-fit: cover; /* Ensure images cover the area nicely */
+    border-radius: 10px; /* Match parent's border radius */
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 24px; /* Larger arrow icons */
+    border-radius: 50%; /* Circular buttons */
+    transition: background-color 0.3s ease;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0,0,0,0.7); /* Darker on hover for better visibility */
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Responsive Design: Adjust the carousel for smaller screens */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 95%;
+    }
+
+    button.prev, button.next {
+        font-size: 20px; /* Slightly smaller arrows on smaller screens */
+        padding: 10px;
+    }
+}
